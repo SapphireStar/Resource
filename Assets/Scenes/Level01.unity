@@ -885,6 +885,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70900b0f91fb4e34193f4618e145acef, type: 3}
+--- !u!95 &685473147 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2904380108608358897, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+    type: 3}
+  m_PrefabInstance: {fileID: 1062702462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &685473150 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2551500961408471018, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+    type: 3}
+  m_PrefabInstance: {fileID: 1062702462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &709483347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1074,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551500961408471018, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 685473147}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 685473150}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: height
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2551500961408471022, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
         type: 3}
@@ -12248,7 +12280,7 @@ MonoBehaviour:
   DeadEnemies: []
   playerAttackBlocks: []
   movingBlocks: []
-  key: {fileID: 0}
+  keys: []
   ExitDoor: {fileID: 0}
 --- !u!4 &2110396532
 Transform:

@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1857049057}
     m_Modifications:
+    - target: {fileID: 167432219851301413, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 765236324179625217, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
         type: 3}
       propertyPath: saw
@@ -189,6 +194,31 @@ PrefabInstance:
       propertyPath: CheckObject
       value: 
       objectReference: {fileID: 1951005732}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 50660624}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 50660623}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: isGrounded
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: height
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2551500961408471021, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
         type: 3}
       propertyPath: m_FlipX
@@ -217,7 +247,7 @@ PrefabInstance:
     - target: {fileID: 2551500961408471022, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.57
+      value: 2.91
       objectReference: {fileID: 0}
     - target: {fileID: 2551500961408471022, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
         type: 3}
@@ -310,7 +340,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.1214056, y: -0.121405125}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -321,7 +351,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0323753, y: 1.5665579}
   m_EdgeRadius: 0
 --- !u!50 &50660623
 Rigidbody2D:
@@ -344,6 +374,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &50660624 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2904380108608358897, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+    type: 3}
+  m_PrefabInstance: {fileID: 50660619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &50660626 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
@@ -630,7 +666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236389411}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.75, y: 3.57, z: -10}
+  m_LocalPosition: {x: 13.75, y: 3.91, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 111227576}
@@ -12227,7 +12263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941850219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.75, y: 3.57, z: -10}
+  m_LocalPosition: {x: 13.75, y: 3.91, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12375,7 +12411,7 @@ MonoBehaviour:
   DeadEnemies: []
   playerAttackBlocks: []
   movingBlocks: []
-  key: {fileID: 0}
+  keys: []
   ExitDoor: {fileID: 0}
 --- !u!4 &2110396532
 Transform:
