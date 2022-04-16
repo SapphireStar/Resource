@@ -190,6 +190,16 @@ PrefabInstance:
       propertyPath: CheckObject
       value: 
       objectReference: {fileID: 1951005732}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 50660622}
+    - target: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 50660623}
     - target: {fileID: 2551500961408471021, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
         type: 3}
       propertyPath: m_FlipX
@@ -294,6 +304,12 @@ Transform:
 --- !u!1 &50660621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2551500961408471017, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+    type: 3}
+  m_PrefabInstance: {fileID: 50660619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &50660622 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2904380108608358897, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
     type: 3}
   m_PrefabInstance: {fileID: 50660619}
   m_PrefabAsset: {fileID: 0}
@@ -527,7 +543,7 @@ MonoBehaviour:
   resourcesGotBefore: []
   blockPlacedBefore: []
   enemyBeated: []
-  isPlayerHasKey: 0
+  PlayerKeyHad: []
 --- !u!61 &231959546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15565,7 +15581,7 @@ MonoBehaviour:
   DeadEnemies: []
   playerAttackBlocks: []
   movingBlocks: []
-  key: {fileID: 0}
+  keys: []
   ExitDoor: {fileID: 0}
 --- !u!4 &2110396532
 Transform:

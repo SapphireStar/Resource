@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public float downSpeed;
     float jumpTime;
     public float ForceInAir;
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     [Header("PlayerStates")]
     public float speed = 10f;
     public bool isGrounded;
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void Start()
     {
-        levelgeneration = GameObject.FindObjectOfType<LevelGeneration>().GetComponent<LevelGeneration>();
+        //levelgeneration = GameObject.FindObjectOfType<LevelGeneration>().GetComponent<LevelGeneration>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         isInAir = false;
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         ResetScene();
         Jump();
         CheckIsGrounded();
-        if(levelgeneration.StopGeneration==true)//生成完地图后再判断玩家是否有钥匙
+        //if(levelgeneration.StopGeneration==true)//生成完地图后再判断玩家是否有钥匙
         GameManager.Instance.checkIfPlayerHasKey();
         if (flag)
         {

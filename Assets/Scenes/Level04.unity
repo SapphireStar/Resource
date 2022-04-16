@@ -190,6 +190,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a4464ff13f868343932b4dd0108fdcf, type: 3}
+--- !u!114 &5688491 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1157189214386119012, guid: 9a4464ff13f868343932b4dd0108fdcf,
+    type: 3}
+  m_PrefabInstance: {fileID: 5688490}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a24b8bb9a673174a945dfda8790a701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &111227575
 GameObject:
   m_ObjectHideFlags: 3
@@ -315,6 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerHealthBar: {fileID: 1822840064}
   player: {fileID: 0}
+  blockSelectedList: []
 --- !u!4 &201068323
 Transform:
   m_ObjectHideFlags: 0
@@ -396,7 +409,7 @@ MonoBehaviour:
   resourcesGotBefore: []
   blockPlacedBefore: []
   enemyBeated: []
-  isPlayerHasKey: 0
+  PlayerKeyHad: []
 --- !u!61 &231959546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -703,6 +716,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 691170036}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &691170038 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+    type: 3}
+  m_PrefabInstance: {fileID: 691170036}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cf5cd82846466458cf788a5dfeb4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &709483347
 GameObject:
   m_ObjectHideFlags: 0
@@ -15290,17 +15315,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29cca9707b9c2564d8681a307af099e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 691170038}
   isDead: 0
   resourceGot: []
   blockPlaced: []
-  currentSavePoint: {fileID: 0}
+  currentSavePoint: {fileID: 231959545}
   Enemies: []
   DeadEnemies: []
   playerAttackBlocks: []
   movingBlocks: []
-  key: {fileID: 0}
-  ExitDoor: {fileID: 0}
+  keys: []
+  ExitDoor: {fileID: 5688491}
 --- !u!4 &2110396532
 Transform:
   m_ObjectHideFlags: 0
@@ -15480,8 +15505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e279ed94f3465e24a918e25ce42df83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spr: {fileID: 21300000, guid: 6f12b2ee8a890f044b9f661ac9e510b9, type: 3}
-  orig: {fileID: 21300000, guid: eeb143e1cd9bf664e9cdd3e274ab0021, type: 3}
+  selected: {fileID: 21300000, guid: 6f12b2ee8a890f044b9f661ac9e510b9, type: 3}
+  unselected: {fileID: 21300000, guid: eeb143e1cd9bf664e9cdd3e274ab0021, type: 3}
 --- !u!224 &31864734428801106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15569,8 +15594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc2148b2633688f4fa05e82a3e27c6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spr: {fileID: 21300000, guid: 474ec7c6f4232e24b85840b8ec7975da, type: 3}
-  orig: {fileID: 21300000, guid: 0909e39d2bef06e42ae4525427302705, type: 3}
+  selected: {fileID: 21300000, guid: 474ec7c6f4232e24b85840b8ec7975da, type: 3}
+  unselected: {fileID: 21300000, guid: 0909e39d2bef06e42ae4525427302705, type: 3}
 --- !u!1 &31864734519013530
 GameObject:
   m_ObjectHideFlags: 0

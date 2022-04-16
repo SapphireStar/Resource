@@ -490,7 +490,7 @@ MonoBehaviour:
   resourcesGotBefore: []
   blockPlacedBefore: []
   enemyBeated: []
-  isPlayerHasKey: 0
+  PlayerKeyHad: []
 --- !u!61 &231959546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -925,6 +925,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ca38b82c9ee8ae4e9a4d38db3965741, type: 3}
+--- !u!114 &921781978 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2551500961408471020, guid: 9ca38b82c9ee8ae4e9a4d38db3965741,
+    type: 3}
+  m_PrefabInstance: {fileID: 921781977}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cf5cd82846466458cf788a5dfeb4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &996388528
 GameObject:
   m_ObjectHideFlags: 0
@@ -41941,6 +41953,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a4464ff13f868343932b4dd0108fdcf, type: 3}
+--- !u!114 &1532237267 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1157189214386119012, guid: 9a4464ff13f868343932b4dd0108fdcf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1532237266}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a24b8bb9a673174a945dfda8790a701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1600698422
 GameObject:
   m_ObjectHideFlags: 0
@@ -46228,17 +46252,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29cca9707b9c2564d8681a307af099e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 921781978}
   isDead: 0
   resourceGot: []
   blockPlaced: []
-  currentSavePoint: {fileID: 0}
+  currentSavePoint: {fileID: 231959545}
   Enemies: []
   DeadEnemies: []
   playerAttackBlocks: []
   movingBlocks: []
-  key: {fileID: 0}
-  ExitDoor: {fileID: 0}
+  keys: []
+  ExitDoor: {fileID: 1532237267}
 --- !u!4 &2110396532
 Transform:
   m_ObjectHideFlags: 0
