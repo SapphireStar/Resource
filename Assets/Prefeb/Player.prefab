@@ -103,16 +103,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CheckObject: {fileID: 3739864651361188456}
   player: {fileID: 2551500961408471017}
-  anim: {fileID: 0}
+  anim: {fileID: 2904380108608358897}
   flag: 0
   downSpeed: 0
   ForceInAir: 0
+  rb: {fileID: 2551500961408471018}
   speed: 10
   isGrounded: 0
-  height: 5
+  height: 12
   isInAir: 0
   health: 0
-  hasKey: 0
+  PlayerKeys: []
   radius: 0.52
   GroundLayers:
     serializedVersion: 2
